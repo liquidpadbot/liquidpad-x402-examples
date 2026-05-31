@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 440" width="760" height="440" role="img" aria-label="LiquidPad x402 demo">
+<title>LiquidPad x402: cold call → 402 → pay → 200</title>
+<style>
+@keyframes frame-0 {
+  0%, 0.00%, 11.67%, 100% { opacity: 0; }
+  0.58%, 11.43% { opacity: 1; }
+}
+.frame-0 {
+  animation: frame-0 12s linear infinite;
+  opacity: 0;
+}
+
+@keyframes frame-1 {
+  0%, 11.67%, 21.67%, 100% { opacity: 0; }
+  12.17%, 21.47% { opacity: 1; }
+}
+.frame-1 {
+  animation: frame-1 12s linear infinite;
+  opacity: 0;
+}
+
+@keyframes frame-2 {
+  0%, 21.67%, 38.33%, 100% { opacity: 0; }
+  22.50%, 38.00% { opacity: 1; }
+}
+.frame-2 {
+  animation: frame-2 12s linear infinite;
+  opacity: 0;
+}
+
+@keyframes frame-3 {
+  0%, 38.33%, 45.00%, 100% { opacity: 0; }
+  38.67%, 44.87% { opacity: 1; }
+}
+.frame-3 {
+  animation: frame-3 12s linear infinite;
+  opacity: 0;
+}
+
+@keyframes frame-4 {
+  0%, 45.00%, 55.00%, 100% { opacity: 0; }
+  45.50%, 54.80% { opacity: 1; }
+}
+.frame-4 {
+  animation: frame-4 12s linear infinite;
+  opacity: 0;
+}
+
+@keyframes frame-5 {
+  0%, 55.00%, 63.33%, 100% { opacity: 0; }
+  55.42%, 63.17% { opacity: 1; }
+}
+.frame-5 {
+  animation: frame-5 12s linear infinite;
+  opacity: 0;
+}
+
+@keyframes frame-6 {
+  0%, 63.33%, 73.33%, 100% { opacity: 0; }
+  63.83%, 73.13% { opacity: 1; }
+}
+.frame-6 {
+  animation: frame-6 12s linear infinite;
+  opacity: 0;
+}
+
+@keyframes frame-7 {
+  0%, 73.33%, 100.00%, 100% { opacity: 0; }
+  74.67%, 99.47% { opacity: 1; }
+}
+.frame-7 {
+  animation: frame-7 12s linear infinite;
+  opacity: 0;
+}</style>
+
+<!-- Background -->
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0%" stop-color="#0a0e1a"/>
+    <stop offset="100%" stop-color="#040912"/>
+  </linearGradient>
+</defs>
+<rect width="760" height="440" rx="14" ry="14" fill="url(#bg)"/>
+<rect width="760" height="440" rx="14" ry="14" fill="none" stroke="#1f2a44" stroke-width="1"/>
+
+<!-- Window chrome -->
+<circle cx="22" cy="24" r="6" fill="#ff5f57"/>
+<circle cx="42" cy="24" r="6" fill="#febc2e"/>
+<circle cx="62" cy="24" r="6" fill="#28c840"/>
+<text x="380" y="29" text-anchor="middle" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="12">liquidpad.site/api/x402/verify  ·  agent-payable</text>
+
+<!-- Frames -->
+<g class="frame-0"><text x="24" y="78" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">$ </text><text x="24" y="100" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">curl -i https://liquidpad.site/api/x402/verify/0xABC...</text></g>
+<g class="frame-1"><text x="24" y="78" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">$ </text><text x="24" y="100" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">curl -i https://liquidpad.site/api/x402/verify/0xABC...</text><text x="24" y="144" fill="#ff6b6b" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">HTTP/2 402 Payment Required</text></g>
+<g class="frame-2"><text x="24" y="78" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">$ </text><text x="24" y="100" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">curl -i https://liquidpad.site/api/x402/verify/0xABC...</text><text x="24" y="144" fill="#ff6b6b" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">HTTP/2 402 Payment Required</text><text x="24" y="166" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">{ &quot;scheme&quot;: &quot;exact&quot;, &quot;asset&quot;: &quot;USDC&quot;,</text><text x="24" y="188" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">  &quot;maxAmountRequired&quot;: &quot;1000&quot;,  // $0.001</text><text x="24" y="210" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">  &quot;network&quot;: &quot;eip155:8453&quot;,     // Base</text><text x="24" y="232" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">  &quot;payTo&quot;: &quot;0x1881...50E0&quot; }</text></g>
+<g class="frame-3"><text x="24" y="78" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">$ </text><text x="24" y="100" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">node verify.mjs 0xABC...</text></g>
+<g class="frame-4"><text x="24" y="78" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">$ </text><text x="24" y="100" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">node verify.mjs 0xABC...</text><text x="24" y="144" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ signing EIP-3009 transferWithAuthorization...</text></g>
+<g class="frame-5"><text x="24" y="78" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">$ </text><text x="24" y="100" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">node verify.mjs 0xABC...</text><text x="24" y="144" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ signing EIP-3009 transferWithAuthorization...</text><text x="24" y="166" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ retrying with X-PAYMENT header...</text></g>
+<g class="frame-6"><text x="24" y="78" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">$ </text><text x="24" y="100" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">node verify.mjs 0xABC...</text><text x="24" y="144" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ signing EIP-3009 transferWithAuthorization...</text><text x="24" y="166" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ retrying with X-PAYMENT header...</text><text x="24" y="188" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ facilitator settling on Base...</text></g>
+<g class="frame-7"><text x="24" y="78" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">$ </text><text x="24" y="100" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">node verify.mjs 0xABC...</text><text x="24" y="144" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ signing EIP-3009 transferWithAuthorization...</text><text x="24" y="166" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ retrying with X-PAYMENT header...</text><text x="24" y="188" fill="#a9bad6" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">→ facilitator settling on Base...</text><text x="24" y="232" fill="#31ffa0" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">✓ HTTP 200</text><text x="24" y="254" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">{ &quot;verified&quot;: true, &quot;name&quot;: &quot;LiquidPad&quot;,</text><text x="24" y="276" fill="#eaf2ff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">  &quot;kind&quot;: &quot;platform&quot;, &quot;agentId&quot;: 50962 }</text><text x="24" y="320" fill="#20dbff" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">settled tx: 0xa1f2...3c4d</text><text x="24" y="342" fill="#7289aa" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="14" xml:space="preserve">cost:       $0.001 USDC</text></g>
+
+<!-- Footer brand -->
+<text x="736" y="426" text-anchor="end" fill="#3a4a6a" font-family="ui-monospace, 'SF Mono', 'Cascadia Code', 'Fira Code', Menlo, Consolas, monospace" font-size="11">liquidpad.site/x402  ·  x402 v1  ·  USDC on Base</text>
+</svg>

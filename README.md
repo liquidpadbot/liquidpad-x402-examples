@@ -2,6 +2,8 @@
 
 Pay-per-request examples for LiquidPad's agent-payable read endpoints.
 
+![demo](./demo.svg)
+
 Each script makes a real x402 call against `liquidpad.site` using USDC on Base
 mainnet. Cold call returns HTTP 402 with payment requirements; signed retry
 gets the data plus a settlement tx hash.
