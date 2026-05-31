@@ -1,0 +1,26 @@
+{
+  "name": "liquidpad-x402-examples",
+  "version": "0.1.0",
+  "description": "Pay-per-request examples for LiquidPad's x402 endpoints. Real USDC on Base mainnet.",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "verify": "node verify.mjs",
+    "provenance": "node provenance.mjs",
+    "agents": "node agents.mjs",
+    "cold": "bash raw-curl.sh"
+  },
+  "dependencies": {
+    "viem": "^2.21.26",
+    "x402-fetch": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "MIT",
+  "homepage": "https://www.liquidpad.site/x402",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/liquidpadbot/liquidpad-x402-examples"
+  }
+}
