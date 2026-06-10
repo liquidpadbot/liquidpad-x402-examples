@@ -20,6 +20,12 @@ All three have free counterparts at the same paths without `/x402/`. The paid
 versions are for agents that need guaranteed access without sharing the public
 rate budget.
 
+There's also a pay-per-inference endpoint:
+
+| Endpoint | Price | What it returns |
+|---|---|---|
+| `POST /api/x402/inference` | $0.01 USDC | A single OpenAI-compatible chat completion — no API key, output capped at 512 tokens |
+
 Spec: <https://docs.x402.org/core-concepts/http-402>
 Live page: <https://www.liquidpad.site/x402>
 
@@ -60,6 +66,7 @@ Cost per script run: $0.001 (verify, provenance) or $0.005 (agents).
 - [`verify.mjs`](./verify.mjs) — token provenance check
 - [`provenance.mjs`](./provenance.mjs) — full ERC-8004 provenance
 - [`agents.mjs`](./agents.mjs) — bulk read of the agents registry
+- [`inference.mjs`](./inference.mjs) — pay-per-inference, OpenAI-compatible completion
 - [`raw-curl.sh`](./raw-curl.sh) — cold-call snapshot, no signing (just see the 402)
 
 ## How it works

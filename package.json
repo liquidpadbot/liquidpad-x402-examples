@@ -8,6 +8,7 @@
     "verify": "node verify.mjs",
     "provenance": "node provenance.mjs",
     "agents": "node agents.mjs",
+    "inference": "node inference.mjs",
     "cold": "bash raw-curl.sh"
   },
   "dependencies": {
